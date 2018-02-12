@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sem título</title>
+<style>
+	section#conteudo{
+		width: 1000px;
+		margin: auto;
+		overflow: hidden;
+	}
+	iframe#frame-spec{
+		width: 490px;
+		height: 400px;
+		border: none;
+		overflow: hidden;
+	}
+	iframe#frame-spec::-webkit-scrollbar{ /*Esconde a barra de rolagem*/
+		display: none;
+	}
+</style>
+</head>
+
+<body>
+	<section id="conteudo">
+	<a ></a>
+
+	<img src="Cj-lFuDWUAAHm1O.jpg" alt="trainer" usemap="#tpoke"> <!--
+	utilize o mapa que esta nesse proprio documento e é relativo ao #tpoke relação entre o map-->
+	
+	<map name="tpoke"><!--Mapa composto de area-->
+		<area shape="poly" coords="186,231,200,294,186,311,171,314,159,249,164,213" href="poke-teste-mini-site.html#bolsa" target="janela" alt="Bolsa">
+		
+		<area shape="circle" coords="150,145,10" href="poke-teste-mini-site.html#bola" target="janela" alt="Poke">
+		
+		<area shape="poly" coords="102,507,104,545,35,547,26,532,30,521,56,524,74,504" href="poke-teste-mini-site.html#sapato" alt="" target="janela">
+	</map>
+	
+	<iframe src="poke-teste-mini-site.html" name="janela" id="frame-spec" scrolling="no"></iframe>
+	</section>
+</body>
+</html>
